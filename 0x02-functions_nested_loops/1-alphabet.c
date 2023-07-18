@@ -1,20 +1,14 @@
-#include "main.h"
+#include "Alx Low Level programming"
 
 /**
- * print_alphabet -  prints the lowercase alphabet
- *
- *
- * Return: void
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line.
  */
-
 void print_alphabet(void)
 {
-	char c = 'a';
-	int i;
+	char letter;
 
-	for (i = 0; i < 26; i++)
-	{
-		_putchar(c + i);
-	}
-	_putchar(10);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+
+	_putchar('\n');
 }
